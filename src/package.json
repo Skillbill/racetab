@@ -1,0 +1,24 @@
+{
+  "name": "racetab",
+  "version": "1.0.0",
+  "description": "A task starter in different tab using gnome-terminal on any linux os",
+  "main": "index.js",
+  "bin": {
+    "racetab": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "task",
+    "starter",
+    "tab",
+    "runner"
+  ],
+  "author": "Biagio Ruggiero",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^9.2.0",
+    "js-yaml": "^4.1.0"
+  }
+}
