@@ -61,7 +61,7 @@ config.tasks.forEach(
 const task = tasks[options.task]
 const waitenter = 'echo \\"press enter to close\\" && read'
 const itSelfStringTask = (taskLabel) => `${scriptName} -c "${options.config}" -t "${taskLabel}" --launch -f "${options.format}" -d "${options.dir}"`
-const terminalItSelfTask = (taskLabel, newWindow = false) => `gnome-terminal --working-directory "${options.dir}" ${newWindow?'':'--tab'} -- ${itSelfStringTask(taskLabel)}`
+const terminalItSelfTask = (taskLabel, newWindow = false) => `gnome-terminal --working-directory "${options.dir}" ${newWindow?'--maximize':'--tab'} -- ${itSelfStringTask(taskLabel)}`
 const commandLaunchString = (cmd) => `gnome-terminal --working-directory ${options.dir} --tab --title "${task.label}" -- bash -c "${cmd}`
 const escapeQuote = (string) => string.replace(RegExp('"','g'),'\\"')
 const escapeOthers = (string) => string.replace(RegExp('\`','g'),'\\`')
