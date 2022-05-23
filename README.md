@@ -4,6 +4,13 @@
 It's a script that allow to start different job sequentially o parallel each other every one inside it's tab
 
 ## installation
+
+Racetab requires gnome-terminal 
+
+```bash
+sudo apt install gnome-terminal
+```
+
 Enter [src](/src/) folder and do
 ```
 npm install
