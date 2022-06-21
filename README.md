@@ -119,3 +119,5 @@ than launch one of them
 ```
 racetab -c my_project
 ```
+
+if you don't specify a config file, default is to check for a file named default inside your working dir or the folder ~/.config/racetab/

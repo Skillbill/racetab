@@ -10,7 +10,7 @@ const { exec } = require('child_process');
 program
   .description('shell script that allow to launch in different tab syncronus or sequentially group of script eventually waiting for an output based on config file in json or yml')
   .version('1.0.0')
-  .requiredOption('-c, --config <path_config_file/task_nam>', 'task config file path')
+  .requiredOption('-c, --config <path_config_file/task_nam>', 'task config file path', 'default')
   .option('-f, --format <JSON/YML>', 'task config file name format', 'JSON')
   .option('-t, --task <task_label>', 'task to execute label', 'main')
   .option('-d, --dir <path_dir>', 'relative or absolute path to dir where command in config file have to be run', './')
@@ -39,7 +39,7 @@ if(!fs.existsSync(options.config) || !fs.lstatSync(options.config).isFile()){
     options.config = `${userConfig}.yml`
     options.format = 'yml'
   }else{
-    console.log(`not valid config file or bad location/extension if it is in ${os.homedir()}/.config/racetab`)
+    console.log(`not valid config file ${options.config} or bad location/extension if it is in ${os.homedir()}/.config/racetab`)
     process.exit()
   }
 }else{
