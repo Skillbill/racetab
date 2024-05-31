@@ -1,5 +1,5 @@
 {
-  "name": "racetab",
+  "name": "@skillbill/racetab",
   "version": "1.0.0",
   "description": "A task starter in different tab using gnome-terminal on any linux os",
   "main": "index.js",
@@ -15,8 +15,9 @@
     "tab",
     "runner"
   ],
-  "author": "Biagio Ruggiero",
-  "license": "ISC",
+  "private": false,
+  "author": "skillbill",
+  "license": "MIT",
   "dependencies": {
     "commander": "^9.2.0",
     "js-yaml": "^4.1.0"
