@@ -32,7 +32,7 @@ Just look for the installation of node / npm on your distro, if you don't have t
 
 ### Install from code
 
-Enter this repo folder folder and do
+Enter this repo folder and do
 
 ```
 npm install
@@ -53,9 +53,9 @@ After one of the installation you have `racetab` between executable bash script,
 racetab -h
 ```
 
-### to disinstall
+### Disinstall
 
-Is simple
+It is simple with both installation you just need to
 
 ```
 npm -g rm @skillbill/racetab
